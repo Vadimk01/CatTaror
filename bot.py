@@ -6,7 +6,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandle
 
 # === НАСТРОЙКИ ===
 TOKEN = os.getenv("TOKEN")
-BASE_IMG_PATH = r"C:\Users\Vadym\PycharmProjects\TarotBot\TarotBot_img"
+BASE_IMG_PATH = os.path.join(os.path.dirname(__file__), "TarotBot_img")
 
 sent_messages = {}
 
