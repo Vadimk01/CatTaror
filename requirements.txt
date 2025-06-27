@@ -1,1 +1,2 @@
+python-version==3.12.3
 python-telegram-bot==20.7
