@@ -1,8 +1,9 @@
 services:
   - type: web
-    name: tarot-bot
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python bot.py"
-    runtime: python
-    pythonVersion: 3.10.13
+    name: cat-tarot
+    env: docker
+    repo: https://github.com/Vadimk01/CatTaror
+    branch: main
+    dockerfilePath: ./Dockerfile
+    plan: free
+    autoDeploy: true
