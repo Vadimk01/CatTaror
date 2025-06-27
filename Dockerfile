@@ -6,7 +6,7 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY cards/ cards/
+COPY TarotBot_img/ cards/
 
 ENV PYTHONUNBUFFERED=1
 
