@@ -82,8 +82,7 @@ def get_random_card():
     seed = int(time.time() * 1000)
     random.seed(seed)
     card = random.choice(list(card_images.keys()))
-    #position = random.choice(["прямое", "перевёрнутое"])
-    return card #, position
+    return card 
 
 # === /start ===
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -98,7 +97,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()
 
     if query.data == "draw_card":
-        card """, position""" = get_random_card()
+        card  = get_random_card()
         caption = f"🃏 Твоя карта: {card} "
         image_path = card_images.get(card)
 
